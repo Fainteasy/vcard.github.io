@@ -1,1 +1,51 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Sofia+Sans+Condensed:wght@200&display=swap');
+
+  .description {
+        width: 350px;
+        color: white;
+        font-family: 'Sofia Sans Condensed', sans-serif;
+        font-size: 140%;
+  }
+  h1 {
+    font-size: 200% ;
+  }
+  p {
+    text-align: justify;
+  }
+@media only screen and (min-width: 600px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        height:100vh;
+        width: 100vw;
+    }
+    .right {
+        grid-column: 1;
+        grid-row: 1/4;
+        background-color: rgb(185, 185, 185);
+        color: black;
+    }
+    .left {
+            grid-column: 2/4;
+            grid-row: 1/4;
+            background-color: rgb(54, 54, 54);
+    }
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .icon {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .description {
+        grid-column: 2/4;
+        grid-row: 2;
+        justify-self: center;
+        align-self: center;
+        width: 350px;
+        color: white;
+    }
+}
